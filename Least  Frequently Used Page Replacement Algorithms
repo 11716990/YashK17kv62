@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int temp[20],segment[50],tempVar, sc=0,count=0,limit,d,f,i,j,k=0,n,r,t,priority[20],matchCount[20];
+	printf("Enter no of pages:");
+	scanf("%d",&n);
+	printf("Enter the reference string:");
+	while(1)
+	{
+		if(sc<n)
+		{
+			scanf("%d",&tempVar);
+			if(tempVar>=0 && tempVar<=9)
+			{
+				segment[sc]=tempVar;
+				sc++;
+			}
+			else
+			{
+				printf("\nInvalid Range. Enter the value of segments in rangr from {0,9} instead of %d:\t",tempVar);
+			}
+		}
+		else
+		{
+			printf("\nALL THE ENTRIES ARE SUCCESSFULLY ENTERED. PRESS ANY KEY TO CONTINUE\n");
+			getch();
+			break;
+		}
+	}
